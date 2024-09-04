@@ -1,7 +1,7 @@
 # GANs for Super-Resolution: 
 
 ## Introduction
-NN.ipynb is a Python-based implementation utilizing Generative Adversarial Networks (GANs) for enhancing the resolution of images, particularly focusing on satellite imagery trained with planet/Airbus and sentinel scenes. It combines Convolutional Neural Networks (CNNs), for both the generator and discriminator components, alongside VGG19 for deep feature extraction.
+This project is a Python-based implementation utilizing Generative Adversarial Networks (GANs) for enhancing the resolution of images, particularly focusing on satellite imagery trained with planet/Airbus and sentinel scenes. It combines Convolutional Neural Networks (CNNs), for both the generator and discriminator components, alongside VGG19 for deep feature extraction.
 
 ## Features
 - **Residual Learning**: Incorporates residual blocks in the generator to effectively learn image residuals, aiding in reconstructing high-resolution images with more detail.
