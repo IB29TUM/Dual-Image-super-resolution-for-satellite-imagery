@@ -42,16 +42,7 @@ Please note that NN.ipynb is the model with mixed pixels and the other is old mo
 ## Conclusion
 NN.ipynb provides a comprehensive framework for applying GANs to the task of image super-resolution. By leveraging advanced neural network techniques and a novel pixel mixing strategy, it offers a powerful tool for enhancing image quality and resolution. Experiment with different configurations to achieve the best results for your specific application.
 
-## Other Links 
-- All the note books, weights and dataset can also be find in the this link 'https://drive.google.com/drive/folders/1k48xUx2MXh-HAXF1jKh-eg1yunL3SnlL?usp=drive_link'.
-- Concept taken for the paper 'https://arxiv.org/pdf/1609.04802.pdf'
-
-## Datasets
-Otherwise the dataset can be find in the sync and share : 
-- HomeCuBySim (Michael Greza)/Datasets/Dual Image Super Resolution/planet_Airbus_dataset_HighResolution for High resolution imagery collected from planets(4m),Airbus,Landsat
-- HomeCuBySim (Michael Greza)/Datasets/Dual Image Super Resolution/planet_Airbus_dataset_LowResolution for Low resolution imagery collected from planets(scaled downed/sentinel 10 m)
-
-**Using Pre-trained Weights for Instant Super-Resolution**: After training or without, you can leverage the `gen_e_150.h5` file, which contains the generator's weights after 150 epochs of training, to enhance the resolution of your images without retraining. To apply these weights for super-resolution:
+**Using Pre-trained Weights for Instant Super-Resolution**: After training, you can leverage the `gen_e_150.h5` file, which contains the generator's weights after 150 epochs of training, to enhance the resolution of your images without retraining. To apply these weights for super-resolution:
 
 1. Ensure you have the `gen_e_150.h5` file in your project directory.
 2. Load the pre-trained weights into your generator model using Keras functions. If you're using a custom generator architecture, make sure it matches the structure used during training before loading the weights.
@@ -84,7 +75,7 @@ generated_scene_hr = generator.predict(scene_lr)
 plt.figure(figsize=(16, 8))
 plt.subplot(231)
 plt.title('planet Image')
-plt.imshow(sreeni_lr[0,:,:,:])
+plt.imshow(image_lr[0,:,:,:])
 plt.subplot(232)
 plt.title('Superresolution')
 plt.imshow(generated_sreeni_hr[0,:,:,:])
