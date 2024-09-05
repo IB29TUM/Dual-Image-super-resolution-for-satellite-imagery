@@ -44,6 +44,9 @@ NN.ipynb provides a comprehensive framework for applying GANs to the task of ima
 
 **Using Pre-trained Weights for Instant Super-Resolution**: After training, you can leverage the `gen_e_150.h5` file, which contains the generator's weights after 150 epochs of training, to enhance the resolution of your images without retraining. To apply these weights for super-resolution:
 
+Download the pretrained weights (both with mixed pixels or without) as required : 
+https://syncandshare.lrz.de/dl/fiL3Z2QLAtR9NiiPPTqd91/.dir
+
 1. Ensure you have the `gen_e_150.h5` file in your project directory.
 2. Load the pre-trained weights into your generator model using Keras functions. If you're using a custom generator architecture, make sure it matches the structure used during training before loading the weights.
 3. Preprocess your low-resolution images to fit the input requirements of the model (e.g., resizing, normalization).
