@@ -81,10 +81,10 @@ plt.title('planet Image')
 plt.imshow(image_lr[0,:,:,:])
 plt.subplot(232)
 plt.title('Superresolution')
-plt.imshow(generated_sreeni_hr[0,:,:,:])
+plt.imshow(generated_hr[0,:,:,:])
 plt.subplot(233)
 plt.title('Sentinel image')
-plt.imshow(sreeni_hr[0,:,:,:])
+plt.imshow(image_hr[0,:,:,:])
 
 plt.show()
 ```
